@@ -1,0 +1,6 @@
+framework module SWExample {
+  umbrella header "SWExample-umbrella.h"
+
+  export *
+  module * { export * }
+}
