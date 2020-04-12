@@ -30,6 +30,7 @@ open class ExampleViewController: BaseViewController {
         let tableView = UITableView(frame: .zero, style: .plain)
         tableView.backgroundColor = .white
         tableView.rowHeight = 44
+        tableView.tableFooterView = UIView()
         return tableView
     }()
     
@@ -61,11 +62,13 @@ open class ExampleViewController: BaseViewController {
                 self.tableView.deselectRow(at: indexPath, animated: true)
                 let section = sections[indexPath.section]
                 let item = section.items[indexPath.row]
-                if let cls = NSClassFromString(item.forward) {
-                    print(cls)
-                //                JXDBaseViewController *vc = [(JXDBaseViewController *)[cls alloc] initWithParams:item.params];
-                //                vc.navigationItem.title = item.name;
-                //                [self.navigationController pushViewController:vc animated:YES];
+                
+                let namespace = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String
+                let classname = namespace + "." + item.forward + "ViewController"
+                if let cls = NSClassFromString(classname) as? BaseViewController.Type {
+                    let vc = cls.init()
+                    vc.navigationItem.title = item.name
+                    self.navigationController?.pushViewController(vc, animated: true)
                 } else {
                     let sel = NSSelectorFromString(item.forward + ":")
                     if self.responds(to: sel) {

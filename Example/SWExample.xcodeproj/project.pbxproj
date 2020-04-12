@@ -12,6 +12,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		794BF669244398980021890C /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794BF668244398980021890C /* TestViewController.swift */; };
+		794BF66B244398AE0021890C /* Test.json in Resources */ = {isa = PBXBuildFile; fileRef = 794BF66A244398AE0021890C /* Test.json */; };
 		79765742244391E1003CEA79 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79765741244391E1003CEA79 /* HomeViewController.swift */; };
 		79765744244391F7003CEA79 /* Home.json in Resources */ = {isa = PBXBuildFile; fileRef = 79765743244391F7003CEA79 /* Home.json */; };
 		DF7AD46107625C938918EF70 /* Pods_SWExample_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722BFA1B787D5F4E62E2542E /* Pods_SWExample_Example.framework */; };
@@ -43,6 +45,8 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		722BFA1B787D5F4E62E2542E /* Pods_SWExample_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWExample_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		794BF668244398980021890C /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		794BF66A244398AE0021890C /* Test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Test.json; sourceTree = "<group>"; };
 		79765741244391E1003CEA79 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		79765743244391F7003CEA79 /* Home.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Home.json; sourceTree = "<group>"; };
 		A37FFDF5E43A95AC5B96E179 /* Pods-SWExample_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWExample_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SWExample_Tests/Pods-SWExample_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 				79765741244391E1003CEA79 /* HomeViewController.swift */,
 				79765743244391F7003CEA79 /* Home.json */,
+				794BF668244398980021890C /* TestViewController.swift */,
+				794BF66A244398AE0021890C /* Test.json */,
 			);
 			name = "Example for SWExample";
 			path = SWExample;
@@ -254,6 +260,7 @@
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				79765744244391F7003CEA79 /* Home.json in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				794BF66B244398AE0021890C /* Test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				794BF669244398980021890C /* TestViewController.swift in Sources */,
 				79765742244391E1003CEA79 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
