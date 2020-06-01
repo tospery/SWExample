@@ -65,7 +65,7 @@ open class ExampleViewController: BaseViewController {
                 
                 let namespace = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String
                 let classname = namespace + "." + item.forward + "ViewController"
-                if let cls = NSClassFromString(classname) as? BaseViewController.Type {
+                if let cls = NSClassFromString(classname) as? UIViewController.Type {
                     let vc = cls.init()
                     vc.navigationItem.title = item.name
                     self.navigationController?.pushViewController(vc, animated: true)
